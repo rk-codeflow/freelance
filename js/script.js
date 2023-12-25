@@ -1,10 +1,8 @@
-// Feather icons
-feather.replace();
+const toggleMenu = document.getElementById("menu");
+const sidebar = document.getElementById("sidebar-wrapper");
+const navTitle = document.querySelector(".nav-title");
 
-// Toggle functionality
-$(document).ready(function () {
-  $("#menu-toggle").click(function (e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("menuDisplayed");
-  });
+toggleMenu.addEventListener("click", () => {
+  sidebar.classList.toggle("active");
+  navTitle.classList.toggle("hide");
 });
