@@ -40,6 +40,18 @@
         <header>
           <i class="fa-solid fa-bars fa-lg" id="menu"></i>
 
+          <!-- switch starts-->
+          <label class="switch">
+            <input type="checkbox" id="togBtn" />
+            <div class="slider round">
+              <!--ADDED HTML -->
+              <span class="on">Customer screening</span>
+              <span class="off">Customer search</span
+              ><!--END-->
+            </div>
+          </label>
+          <!-- switch ends -->
+
           <!-- form section starts -->
           <div class="select-form">
             <label for="client">Client type</label>
@@ -70,6 +82,32 @@
               aria-label="Citizenship number"
               readonly
             />
+          </div>
+
+          <!-- search -->
+          <div class="search-section">
+            <div class="d-flex align-items-center gap-2">
+              <div class="search-field">
+                <i class="fa fa-search"></i>
+                <input
+                  type="text"
+                  class="form-control search-input"
+                  placeholder="Search"
+                />
+              </div>
+              <button class="px-1"><i class="fa-solid fa-gear"></i></button>
+            </div>
+
+            <div class="d-flex gap-2">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-filter"></i>
+                <a href="#" class="fw-light"><p>Advanced search</p></a>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-filter"></i>
+                <a href="#" class="fw-light"><p>Batch screening</p></a>
+              </div>
+            </div>
           </div>
           <!-- form section ends  -->
         </header>
