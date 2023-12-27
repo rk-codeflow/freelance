@@ -17,18 +17,37 @@ starts
   display: none;
 }
 
+.show {
+  display: block;
+}
+
 ul,
 ol {
   margin: 0;
   padding: 0;
 }
 
-p {
+p,
+h5 {
   margin-bottom: 0;
 }
 
 a {
   color: #000;
+}
+
+label {
+  font-size: 13px;
+}
+
+select {
+  width: 150px !important;
+  font-size: 13px !important;
+}
+
+input {
+  max-width: 150px;
+  font-size: 13px !important;
 }
 
 /*************
@@ -192,37 +211,62 @@ switch css ends
 *************/
 /*************
 ==============
-search section
+user section
+starts
 =============
 *************/
-.search-field {
+.user-section {
+  display: flex;
+  margin-left: auto;
   position: relative;
 }
-.search-field .fa-search {
+.user-section .date-time {
+  display: flex;
+  gap: 5px;
+}
+.user-section #user-details {
+  border: 2px solid #6c757d;
   position: absolute;
-  top: 14px;
-  left: 20px;
-  color: #9ca3af;
+  right: 0;
+  top: 48px;
+  background-color: #ddd;
 }
-.search-field span {
-  position: absolute;
-  right: 17px;
-  top: 13px;
-  padding: 2px;
-  border-left: 1px solid #d1d5db;
+.user-section #user-details .user {
+  display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  padding: 8px 16px;
 }
-.search-field .search-input {
-  height: 40px;
-  text-indent: 33px;
+.user-section #user-details .user:not(:last-child) {
+  border-bottom: 2px solid #6c757d;
 }
-.search-field .search-input:focus {
-  box-shadow: none;
-  border: none;
+.user-section #user-details .user h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.user-section #user-details .user a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.user-inititals {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #6c757d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px;
+  cursor: pointer;
 }
 
 /*************
 ==============
-search section
+user section
 ends
 =============
 *************/
