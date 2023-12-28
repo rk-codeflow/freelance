@@ -17,3 +17,28 @@ userInitials.addEventListener("click", () => {
   userDetails.classList.toggle("hide");
   userDetails.classList.toggle("show");
 });
+
+// Switch
+const switchInput = document.getElementById("switch-input");
+const screeningDB = document.getElementById("customer-screening");
+const searchDB = document.getElementById("customer-search");
+
+switchInput.addEventListener("click", () => {
+  if (switchInput.checked) {
+    // show customer search
+    searchDB.classList.remove("hide");
+    screeningDB.classList.add("hide");
+  } else {
+    // show customer screening
+    screeningDB.classList.remove("hide");
+    searchDB.classList.add("hide");
+  }
+});
+
+// Advanced search
+const advSearchBtn = document.querySelector(".adv-search-btn");
+const advSearch = document.getElementById("adv-search");
+
+advSearchBtn.addEventListener("click", () => {
+  advSearch.classList.toggle("hide");
+});

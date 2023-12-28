@@ -43,11 +43,11 @@
           <i class="bi bi-list" id="menu"></i>
           <!-- switch starts-->
           <label class="switch">
-            <input type="checkbox" id="togBtn" />
+            <input type="checkbox" id="switch-input" />
             <div class="slider round">
               <!--ADDED HTML -->
-              <span class="on">Customer screening</span>
-              <span class="off">Customer search</span
+              <span class="on">Customer search</span>
+              <span class="off">Customer screening</span
               ><!--END-->
             </div>
           </label>
@@ -102,7 +102,7 @@
             <div class="d-flex gap-2">
               <div class="d-flex align-items-center gap-2">
                 <i class="bi bi-filter-square"></i>
-                <a href="#" class="fw-light"
+                <a href="#" class="fw-light adv-search-btn"
                   ><p style="font-size: small">Advanced search</p></a
                 >
               </div>
@@ -158,358 +158,520 @@
         </header>
         <!-- header ends here-->
 
-        <div id="content">
-          <h5>Dashboard customer screening</h5>
+        <div class="content">
+          <!-- Dashboard customer screening starts-->
+          <div id="customer-screening">
+            <h5>Dashboard customer screening</h5>
 
-          <!-- card box start -->
-          <div class="cards">
-            <div class="container-fluid">
-              <div class="row">
-                <!-- first box -->
-                <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
-                  <div class="info-block">
-                    <div class="d-flex">
-                      <div
-                        class="flex-grow-1 align-self-center info-block-title"
-                      >
-                        Total Customer Records
-                      </div>
-                      <div
-                        class="info-icon"
-                        style="color: #389f3d; background-color: #d6edd8"
-                      >
-                        <i class="bi bi-person-badge"></i>
-                      </div>
-                    </div>
-
-                    <div class="pill-count">45</div>
-                    <div class="pill-holder">
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
+            <!-- card box start -->
+            <div class="cards">
+              <div class="container-fluid">
+                <div class="row">
+                  <!-- first box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Total Customer Records
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #389f3d; background-color: #d6edd8"
+                        >
+                          <i class="bi bi-person-badge"></i>
+                        </div>
                       </div>
 
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
 
-                <!-- second box -->
-                <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
-                  <div class="info-block">
-                    <div class="d-flex">
-                      <div
-                        class="flex-grow-1 align-self-center info-block-title"
-                      >
-                        Total Confirmed
-                      </div>
-                      <div
-                        class="info-icon"
-                        style="color: #1fb2f3; background-color: #daf4ff"
-                      >
-                        <i class="bi bi-check-circle"></i>
-                      </div>
-                    </div>
-
-                    <div class="pill-count">45</div>
-                    <div class="pill-holder">
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <!-- third box -->
-                <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
-                  <div class="info-block">
-                    <div class="d-flex">
-                      <div
-                        class="flex-grow-1 align-self-center info-block-title"
-                      >
-                        Total Ignored
+                  <!-- second box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Total Confirmed
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #1fb2f3; background-color: #daf4ff"
+                        >
+                          <i class="bi bi-check-circle"></i>
+                        </div>
                       </div>
-                      <div
-                        class="info-icon"
-                        style="color: #9d27b0; background-color: #f3ddf5"
-                      >
-                        <i class="bi bi-eye-slash"></i>
-                      </div>
-                    </div>
 
-                    <div class="pill-count">45</div>
-                    <div class="pill-holder">
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- 4th box -->
-                <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
-                  <div class="info-block">
-                    <div class="d-flex">
-                      <div
-                        class="flex-grow-1 align-self-center info-block-title"
-                      >
-                        Total Reverted
-                      </div>
-                      <div
-                        class="info-icon"
-                        style="color: #01bcd7; background-color: #e0f6f9"
-                      >
-                        <i class="bi bi-arrow-counterclockwise"></i>
-                      </div>
-                    </div>
-
-                    <div class="pill-count">45</div>
-                    <div class="pill-holder">
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <!-- 5th box-->
-                <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
-                  <div class="info-block">
-                    <div class="d-flex">
-                      <div
-                        class="flex-grow-1 align-self-center info-block-title"
-                      >
-                        Total Unauthorized
+                  <!-- third box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Total Ignored
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #9d27b0; background-color: #f3ddf5"
+                        >
+                          <i class="bi bi-eye-slash"></i>
+                        </div>
                       </div>
-                      <div
-                        class="info-icon"
-                        style="color: #3141a4; background-color: #dce0f9"
-                      >
-                        <i class="bi bi-file-lock2"></i>
-                      </div>
-                    </div>
 
-                    <div class="pill-count">45</div>
-                    <div class="pill-holder">
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- 6th box -->
-                <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
-                  <div class="info-block">
-                    <div class="d-flex">
-                      <div
-                        class="flex-grow-1 align-self-center info-block-title"
-                      >
-                        Total Account Hold
-                      </div>
-                      <div
-                        class="info-icon"
-                        style="color: #c5d626; background-color: #fafdd9"
-                      >
-                        <i class="bi bi-pause-circle"></i>
-                      </div>
-                    </div>
-
-                    <div class="pill-count">45</div>
-                    <div class="pill-holder">
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <!-- 7th box -->
-                <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
-                  <div class="info-block">
-                    <div class="d-flex">
-                      <div
-                        class="flex-grow-1 align-self-center info-block-title"
-                      >
-                        Total Account Blocked
+                  <!-- 4th box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Total Reverted
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #01bcd7; background-color: #e0f6f9"
+                        >
+                          <i class="bi bi-arrow-counterclockwise"></i>
+                        </div>
                       </div>
-                      <div
-                        class="info-icon"
-                        style="color: #ee2d20; background-color: #ffebea"
-                      >
-                        <i class="bi bi-ban"></i>
-                      </div>
-                    </div>
 
-                    <div class="pill-count">45</div>
-                    <div class="pill-holder">
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- 8th box -->
-                <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
-                  <div class="info-block">
-                    <div class="d-flex">
-                      <div
-                        class="flex-grow-1 align-self-center info-block-title"
-                      >
-                        Total Account Released
-                      </div>
-                      <div
-                        class="info-icon"
-                        style="color: #ffc108; background-color: #fff7df"
-                      >
-                        <i class="bi bi-send"></i>
-                      </div>
-                    </div>
-
-                    <div class="pill-count">45</div>
-                    <div class="pill-holder">
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <!-- 9th box -->
-                <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
-                  <div class="info-block">
-                    <div class="d-flex">
-                      <div class="flex-grow-1 info-block-title">
-                        Total Debit Restricted Account
+                  <!-- 5th box-->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Total Unauthorized
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #3141a4; background-color: #dce0f9"
+                        >
+                          <i class="bi bi-file-lock2"></i>
+                        </div>
                       </div>
-                      <div
-                        class="info-icon"
-                        style="color: #ea2063; background-color: #ffe6ee"
-                      >
-                        <i class="bi bi-x-octagon"></i>
-                      </div>
-                    </div>
 
-                    <div class="pill-count">45</div>
-                    <div class="pill-holder">
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <!-- 10th box -->
-                <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
-                  <div class="info-block">
-                    <div class="d-flex">
-                      <div
-                        class="flex-grow-1 align-self-center info-block-title"
-                      >
-                        Mark As Other Information
+                  <!-- 6th box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Total Account Hold
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #c5d626; background-color: #fafdd9"
+                        >
+                          <i class="bi bi-pause-circle"></i>
+                        </div>
                       </div>
-                      <div
-                        class="info-icon"
-                        style="color: #037066; background-color: #d7edeb"
-                      >
-                        <i class="bi bi-bookmark-check"></i>
+
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="pill-count">45</div>
-                    <div class="pill-holder">
-                      <div class="info-pill">
-                        <div class="info-pill-title">Joint</div>
-                        <div class="info-pill-count">345</div>
+                  <!-- 7th box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Total Account Blocked
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #ee2d20; background-color: #ffebea"
+                        >
+                          <i class="bi bi-ban"></i>
+                        </div>
+                      </div>
+
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 8th box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Total Account Released
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #ffc108; background-color: #fff7df"
+                        >
+                          <i class="bi bi-send"></i>
+                        </div>
+                      </div>
+
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 9th box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div class="flex-grow-1 info-block-title">
+                          Total Debit Restricted Account
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #ea2063; background-color: #ffe6ee"
+                        >
+                          <i class="bi bi-x-octagon"></i>
+                        </div>
+                      </div>
+
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 10th box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Mark As Other Information
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #037066; background-color: #d7edeb"
+                        >
+                          <i class="bi bi-bookmark-check"></i>
+                        </div>
+                      </div>
+
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- card box ends -->
           </div>
-          <!-- card box ends -->
+          <!-- Dashboard customer screening ends-->
+
+          <!-- Dashboard customer search starts-->
+          <div id="customer-search" class="hide">
+            <h5>Dashboard customer search</h5>
+          </div>
+          <!-- Dashboard customer search ends-->
+
+          <!-- Advanced search form -->
+          <div id="adv-search" class="hide">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col">
+                  <label for="code">Screening code</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Screening code"
+                  />
+                </div>
+                <div class="col">
+                  <label for="code">Minimum percentage tolerance</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Minimum percentage tolerance"
+                  />
+                </div>
+                <div class="col">
+                  <label for="code">Country</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Country"
+                  />
+                </div>
+                <div class="col">
+                  <label for="code">Spouse name</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Spouse name"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <label for="code">Father name</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Father name"
+                  />
+                </div>
+                <div class="col">
+                  <label for="code">Minimum percentage tolerance</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Minimum percentage tolerance"
+                  />
+                </div>
+                <div class="col">
+                  <label for="code">Country</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Country"
+                  />
+                </div>
+                <div class="col">
+                  <label for="code">Spouse name</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Spouse name"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <label for="code">Screening code</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Screening code"
+                  />
+                </div>
+                <div class="col">
+                  <label for="code">Minimum percentage tolerance</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Minimum percentage tolerance"
+                  />
+                </div>
+                <div class="col">
+                  <label for="code">Country</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Country"
+                  />
+                </div>
+                <div class="col">
+                  <label for="code">Spouse name</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Spouse name"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <label for="code">Screening code</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Screening code"
+                  />
+                </div>
+                <div class="col">
+                  <label for="code">Minimum percentage tolerance</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Minimum percentage tolerance"
+                  />
+                </div>
+                <div class="col">
+                  <label for="code">Country</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Country"
+                  />
+                </div>
+                <div class="col">
+                  <label for="code">Spouse name</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Spouse name"
+                  />
+                </div>
+              </div>
+
+              <div class="d-flex column-gap-2 justify-content-end mt-4">
+                <button class="btn btn-secondary">Search</button>
+                <button class="btn btn-secondary">Reset</button>
+              </div>
+            </div>
+          </div>
+          <!-- advanced search form ends -->
         </div>
+        <!-- content ends -->
       </div>
     </div>
     <!-- wrapper ends -->
