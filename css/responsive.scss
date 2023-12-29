@@ -1,0 +1,21 @@
+#content-wrapper {
+  header {
+    @media screen and (max-width: 767px) {
+      justify-content: space-between;
+
+      .select-form,
+      .cust-form,
+      .ctzn,
+      .search-section,
+      .user-section {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      .offcanvas-sidebar {
+        display: none;
+      }
+    }
+  }
+}

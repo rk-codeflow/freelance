@@ -266,6 +266,7 @@ starts
     right: 0;
     top: 48px;
     background-color: $lightGrey;
+    z-index: 100;
 
     .user {
       display: flex;

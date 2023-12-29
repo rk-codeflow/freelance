@@ -19,6 +19,9 @@
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -40,7 +43,7 @@
         <!-- header starts here-->
         <header>
           <!-- hamburger menu -->
-          <i class="bi bi-list" id="menu"></i>
+          <i class="bi bi-list" id="menu" style="font-size: 20px"></i>
           <!-- switch starts-->
           <label class="switch">
             <input type="checkbox" id="switch-input" />
@@ -63,7 +66,7 @@
             </select>
           </div>
 
-          <div>
+          <div class="cust-form">
             <label for="cust-name">Customer name</label>
             <input
               class="form-control"
@@ -74,7 +77,7 @@
             />
           </div>
 
-          <div>
+          <div class="ctzn">
             <label for="cust-name">Citizenship number</label>
             <input
               class="form-control"
@@ -155,6 +158,74 @@
               </div>
             </div>
           </div>
+
+          <!-- right hamburger menu -->
+
+          <!-- offcanvas -->
+          <nav class="navbar offcanvas-sidebar">
+            <div class="container-fluid">
+              <div
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"
+              >
+                <i
+                  class="bi bi-list"
+                  id="right-menu"
+                  style="cursor: pointer; font-size: 20px"
+                ></i>
+              </div>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    style="display: flex; margin-left: auto"
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <div class="select-form">
+                        <label for="client">Client type</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option value="1">Individual</option>
+                          <option value="2">Multiple</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="cust-form">
+                        <label for="cust-name">Customer name</label>
+                        <input
+                          class="form-control"
+                          type="text"
+                          value="Customer name"
+                          aria-label="customer name"
+                          readonly
+                        />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- offcanvas ends -->
         </header>
         <!-- header ends here-->
 

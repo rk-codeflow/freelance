@@ -1,5 +1,4 @@
 // Toggle menu
-
 const toggleMenu = document.getElementById("menu");
 const sidebar = document.getElementById("sidebar-wrapper");
 const navTitle = document.querySelector(".nav-title");
@@ -13,9 +12,18 @@ toggleMenu.addEventListener("click", () => {
 const userInitials = document.getElementById("user-name");
 const userDetails = document.getElementById("user-details");
 
-userInitials.addEventListener("click", () => {
-  userDetails.classList.toggle("hide");
-  userDetails.classList.toggle("show");
+document.addEventListener("click", (event) => {
+  // Check if the clicked element is not userInitials or its descendant
+  if (event.target !== userInitials && !userInitials.contains(event.target)) {
+    userDetails.classList.add("hide");
+  } else {
+    userDetails.classList.toggle("hide");
+  }
+});
+
+// Stop the click event propagation when clicking inside user-details
+userDetails.addEventListener("click", (event) => {
+  event.stopPropagation();
 });
 
 // Switch

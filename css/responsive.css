@@ -1,0 +1,17 @@
+@media screen and (max-width: 767px) {
+  #content-wrapper header {
+    justify-content: space-between;
+  }
+  #content-wrapper header .select-form,
+  #content-wrapper header .cust-form,
+  #content-wrapper header .ctzn,
+  #content-wrapper header .search-section,
+  #content-wrapper header .user-section {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  #content-wrapper header .offcanvas-sidebar {
+    display: none;
+  }
+}/*# sourceMappingURL=responsive.css.map */

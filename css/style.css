@@ -236,6 +236,7 @@ starts
   right: 0;
   top: 48px;
   background-color: #ddd;
+  z-index: 100;
 }
 .user-section #user-details .user {
   display: flex;
