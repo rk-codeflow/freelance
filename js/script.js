@@ -41,6 +41,10 @@ switchInput.addEventListener("click", () => {
     screeningDB.classList.remove("hide");
     searchDB.classList.add("hide");
   }
+
+  // if (switchInput.checked) {
+  //   window.location.href = "index-2.html";
+  // }
 });
 
 // Advanced search
