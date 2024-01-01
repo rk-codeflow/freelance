@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Customer search</title>
+    <title>Freelance</title>
 
     <!-- Bootstrap CDN -->
     <link
@@ -24,7 +24,771 @@
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
-    <h2>another html</h2>
+    <div class="wrapper">
+      <!-- side bar-->
+      <nav id="sidebar-wrapper">
+        <h2 class="logo">Logo</h2>
+        <ul class="sidebar-nav">
+          <li>
+            <a href="#" class="d-flex gap-3 align-items-center">
+              <i class="bi bi-house"></i>
+              <span class="nav-title">Home</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- content -->
+      <div id="content-wrapper">
+        <!-- header starts here-->
+        <header>
+          <!-- hamburger menu -->
+          <i class="bi bi-list" id="menu" style="font-size: 20px"></i>
+          <!-- switch starts-->
+          <label class="switch">
+            <input type="checkbox" class="switch-input" />
+            <div class="slider round">
+              <!--ADDED HTML -->
+              <span class="off">Customer search</span>
+              <span class="on">Customer screening</span
+              ><!--END-->
+            </div>
+          </label>
+          <!-- switch ends -->
+
+          <!-- form section starts -->
+          <div class="select-form">
+            <label for="client">Client type</label>
+            <select class="form-select" aria-label="Default select example">
+              <option value="1">Individual</option>
+              <option value="2">Multiple</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <div class="cust-form">
+            <label for="cust-name">Customer name</label>
+            <input
+              class="form-control"
+              type="text"
+              value="Customer name"
+              aria-label="customer name"
+              readonly
+            />
+          </div>
+
+          <div class="ctzn">
+            <label for="cust-name">Citizenship number</label>
+            <input
+              class="form-control"
+              type="text"
+              value="Citizenship number"
+              aria-label="Citizenship number"
+              readonly
+            />
+          </div>
+
+          <!-- search button -->
+          <div class="search-section">
+            <div class="d-flex align-items-center column-gap-2 mb-2">
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm px-4"
+                style="width: 195px"
+              >
+                <i class="bi bi-search"></i>
+                <span class="mx-2">Search</span>
+              </button>
+              <button class="px-2"><i class="bi bi-gear"></i></button>
+            </div>
+
+            <div class="d-flex gap-2">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-filter-square"></i>
+                <a href="#" class="fw-light adv-search-btn"
+                  ><p style="font-size: small">Advanced search</p></a
+                >
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-info-square-fill"></i>
+                <a href="#" class="fw-light"
+                  ><p style="font-size: small">Batch screening</p></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- form section ends  -->
+
+          <!-- user section -->
+          <div class="user-section">
+            <div class="date-time">
+              <span style="font-size: 12px">28th Dec, 2023 10:10:10 AM</span>
+              <button class="px-1"><i class="bi bi-calendar-check"></i></button>
+              <div class="user-inititals" id="user-name">
+                <p>SA</p>
+              </div>
+            </div>
+
+            <!-- user details -->
+            <div class="hide" id="user-details">
+              <div class="user">
+                <div class="user-inititals">
+                  <p>SA</p>
+                </div>
+                <div>
+                  <h5>Super Admin</h5>
+                  <p>superadmin@digitalagenepal.com</p>
+                </div>
+              </div>
+
+              <div class="user d-flex flex-column row-gap-2">
+                <div class="d-flex column-gap-4 align-items-center">
+                  <i class="bi bi-gear"></i>
+                  <a href="#">Profile</a>
+                </div>
+                <div class="d-flex column-gap-4 align-items-center">
+                  <i class="bi bi-info-circle-fill"></i>
+                  <a href="#">About CFPDS</a>
+                </div>
+              </div>
+
+              <div class="user d-flex column-gap-4">
+                <i class="bi bi-box-arrow-right"></i>
+                <a href="#">Logout</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- right hamburger menu -->
+
+          <!-- offcanvas -->
+          <nav class="navbar offcanvas-sidebar p-0">
+            <div class="container-fluid">
+              <div
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"
+              >
+                <i
+                  class="bi bi-list"
+                  id="right-menu"
+                  style="cursor: pointer; font-size: 20px"
+                ></i>
+              </div>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <div
+                    class="mob-date-time d-flex flex-row-reverse column-gap-2"
+                  >
+                    <span style="font-size: 12px"
+                      >28th Dec, 2023 10:10:10 AM</span
+                    >
+                    <button class="px-1">
+                      <i class="bi bi-calendar-check"></i>
+                    </button>
+                    <div class="user-inititals" id="user-name">
+                      <p>SA</p>
+                    </div>
+                  </div>
+                  <button
+                    style="display: flex; margin-left: auto"
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="mob-select-form">
+                        <label for="client">Client type</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option value="1">Individual</option>
+                          <option value="2">Multiple</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="mob-cust-form">
+                        <label for="cust-name">Customer name</label>
+                        <input
+                          class="form-control"
+                          type="text"
+                          value="Customer name"
+                          aria-label="customer name"
+                          readonly
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="mob-ctzn">
+                        <label for="cust-name">Citizenship number</label>
+                        <input
+                          class="form-control"
+                          type="text"
+                          value="Citizenship number"
+                          aria-label="Citizenship number"
+                          readonly
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-sm px-4 my-2"
+                        style="width: 100%"
+                      >
+                        <i class="bi bi-search"></i>
+                        <span class="mx-2">Search</span>
+                      </button>
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-filter-square"></i>
+                        <a href="#" class="fw-light adv-search-btn"
+                          ><p style="font-size: small">Advanced search</p></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- offcanvas ends -->
+        </header>
+        <!-- header ends here-->
+
+        <div class="content">
+          <!-- Dashboard customer screening starts-->
+          <div class="customer-screening">
+            <h5>Dashboard customer screening</h5>
+
+            <!-- card box start -->
+            <div class="cards">
+              <div class="container-fluid">
+                <div class="row">
+                  <!-- first box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Total Customer Records
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #389f3d; background-color: #d6edd8"
+                        >
+                          <i class="bi bi-person-badge"></i>
+                        </div>
+                      </div>
+
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- second box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Total Confirmed
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #1fb2f3; background-color: #daf4ff"
+                        >
+                          <i class="bi bi-check-circle"></i>
+                        </div>
+                      </div>
+
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- third box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Total Ignored
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #9d27b0; background-color: #f3ddf5"
+                        >
+                          <i class="bi bi-eye-slash"></i>
+                        </div>
+                      </div>
+
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 4th box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Total Reverted
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #01bcd7; background-color: #e0f6f9"
+                        >
+                          <i class="bi bi-arrow-counterclockwise"></i>
+                        </div>
+                      </div>
+
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 5th box-->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Total Unauthorized
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #3141a4; background-color: #dce0f9"
+                        >
+                          <i class="bi bi-file-lock2"></i>
+                        </div>
+                      </div>
+
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 6th box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Total Account Hold
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #c5d626; background-color: #fafdd9"
+                        >
+                          <i class="bi bi-pause-circle"></i>
+                        </div>
+                      </div>
+
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 7th box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Total Account Blocked
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #ee2d20; background-color: #ffebea"
+                        >
+                          <i class="bi bi-ban"></i>
+                        </div>
+                      </div>
+
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 8th box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Total Account Released
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #ffc108; background-color: #fff7df"
+                        >
+                          <i class="bi bi-send"></i>
+                        </div>
+                      </div>
+
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 9th box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div class="flex-grow-1 info-block-title">
+                          Total Debit Restricted Account
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #ea2063; background-color: #ffe6ee"
+                        >
+                          <i class="bi bi-x-octagon"></i>
+                        </div>
+                      </div>
+
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 10th box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 gx-2 gy-2">
+                    <div class="info-block">
+                      <div class="d-flex">
+                        <div
+                          class="flex-grow-1 align-self-center info-block-title"
+                        >
+                          Mark As Other Information
+                        </div>
+                        <div
+                          class="info-icon"
+                          style="color: #037066; background-color: #d7edeb"
+                        >
+                          <i class="bi bi-bookmark-check"></i>
+                        </div>
+                      </div>
+
+                      <div class="pill-count">45</div>
+                      <div class="pill-holder">
+                        <div class="info-pill">
+                          <div class="info-pill-title">Joint</div>
+                          <div class="info-pill-count">345</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card box ends -->
+          </div>
+          <!-- Dashboard customer screening ends-->
+
+          <!-- Dashboard customer search starts-->
+          <div class="customer-search" class="hide">
+            <h5>Dashboard customer search</h5>
+          </div>
+          <!-- Dashboard customer search ends-->
+
+          <!-- Advanced search form -->
+          <div id="adv-search" class="hide">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                  <label for="code">Screening code</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Screening code"
+                  />
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                  <label for="code">Minimum percentage tolerance</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Minimum percentage tolerance"
+                  />
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                  <label for="code">Country</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Country"
+                  />
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                  <label for="code">Spouse name</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Spouse name"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                  <label for="code">Father name</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Father name"
+                  />
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                  <label for="code">Minimum percentage tolerance</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Minimum percentage tolerance"
+                  />
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                  <label for="code">Country</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Country"
+                  />
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                  <label for="code">Spouse name</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Spouse name"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                  <label for="code">Screening code</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Screening code"
+                  />
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                  <label for="code">Minimum percentage tolerance</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Minimum percentage tolerance"
+                  />
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                  <label for="code">Country</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Country"
+                  />
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                  <label for="code">Spouse name</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Spouse name"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                  <label for="code">Screening code</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Screening code"
+                  />
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                  <label for="code">Minimum percentage tolerance</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Minimum percentage tolerance"
+                  />
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                  <label for="code">Country</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Country"
+                  />
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                  <label for="code">Spouse name</label>
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Spouse name"
+                  />
+                </div>
+              </div>
+
+              <div class="d-flex column-gap-2 justify-content-end mt-4">
+                <button class="btn btn-secondary">Search</button>
+                <button class="btn btn-secondary">Reset</button>
+              </div>
+            </div>
+          </div>
+          <!-- advanced search form ends -->
+        </div>
+        <!-- content ends -->
+      </div>
+    </div>
+    <!-- wrapper ends -->
 
     <!-- Bootstrap CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

@@ -27,19 +27,25 @@ userDetails.addEventListener("click", (event) => {
 });
 
 // Switch
-const switchInput = document.getElementById("switch-input");
-const screeningDB = document.getElementById("customer-screening");
-const searchDB = document.getElementById("customer-search");
+const switchInput = document.querySelector(".switch-input");
+const screeningDB = document.querySelector(".customer-screening");
+const searchDB = document.querySelector(".customer-search");
 
 switchInput.addEventListener("click", () => {
+  // if (switchInput.checked) {
+  //   // show customer search
+  //   searchDB.classList.remove("hide");
+  //   screeningDB.classList.add("hide");
+  // } else {
+  //   // show customer screening
+  //   screeningDB.classList.remove("hide");
+  //   searchDB.classList.add("hide");
+  // }
+
   if (switchInput.checked) {
-    // show customer search
-    searchDB.classList.remove("hide");
-    screeningDB.classList.add("hide");
+    window.location.href = "index-2.html";
   } else {
-    // show customer screening
-    screeningDB.classList.remove("hide");
-    searchDB.classList.add("hide");
+    window.location.href = "index.html";
   }
 
   // if (switchInput.checked) {
