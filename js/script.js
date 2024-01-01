@@ -2,9 +2,22 @@
 const toggleMenu = document.getElementById("menu");
 const sidebar = document.getElementById("sidebar-wrapper");
 const navTitle = document.querySelector(".nav-title");
+const smLogo = document.getElementById("logo-sm");
+const lgLogo = document.getElementById("logo-lg");
 
 toggleMenu.addEventListener("click", () => {
   sidebar.classList.toggle("active");
+
+  if (sidebar.classList.contains("active")) {
+    // Show small logo and hide large logo
+    smLogo.classList.remove("hide");
+    lgLogo.classList.add("hide");
+  } else {
+    // Hide small logo and show large logo
+    smLogo.classList.add("hide");
+    lgLogo.classList.remove("hide");
+  }
+
   navTitle.classList.toggle("hide");
 });
 
