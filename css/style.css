@@ -13,6 +13,10 @@ Universal CSS
 starts
 =============
 *************/
+.pointer {
+  cursor: pointer;
+}
+
 .hide {
   display: none;
 }
@@ -28,7 +32,8 @@ ol {
 }
 
 p,
-h5 {
+h5,
+h6 {
   margin-bottom: 0;
 }
 
@@ -227,6 +232,7 @@ starts
 }
 .user-section .date-time {
   display: flex;
+  align-items: center;
   gap: 5px;
 }
 .user-section #user-details {
@@ -351,5 +357,23 @@ starts
   z-index: 99;
 }
 #adv-search .row .col {
+  padding: 5px;
+}
+
+/*************
+==============
+Batch search
+starts
+=============
+*************/
+.batch-data-upload {
+  border: 3px solid #000;
+}
+.batch-data-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #000;
   padding: 5px;
 }/*# sourceMappingURL=style.css.map */

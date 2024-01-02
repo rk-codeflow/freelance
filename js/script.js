@@ -45,21 +45,21 @@ const screeningDB = document.querySelector(".customer-screening");
 const searchDB = document.querySelector(".customer-search");
 
 switchInput.addEventListener("click", () => {
-  // if (switchInput.checked) {
-  //   // show customer search
-  //   searchDB.classList.remove("hide");
-  //   screeningDB.classList.add("hide");
-  // } else {
-  //   // show customer screening
-  //   screeningDB.classList.remove("hide");
-  //   searchDB.classList.add("hide");
-  // }
-
   if (switchInput.checked) {
-    window.location.href = "index-2.html";
+    // show customer search
+    searchDB.classList.remove("hide");
+    screeningDB.classList.add("hide");
   } else {
-    window.location.href = "index.html";
+    // show customer screening
+    screeningDB.classList.remove("hide");
+    searchDB.classList.add("hide");
   }
+
+  // if (switchInput.checked) {
+  //   window.location.href = "index-2.html";
+  // } else {
+  //   window.location.href = "index.html";
+  // }
 
   // if (switchInput.checked) {
   //   window.location.href = "index-2.html";
@@ -69,7 +69,21 @@ switchInput.addEventListener("click", () => {
 // Advanced search
 const advSearchBtn = document.querySelector(".adv-search-btn");
 const advSearch = document.getElementById("adv-search");
+const cancelBtn = document.getElementById("cancel-btn");
 
-advSearchBtn.addEventListener("click", () => {
-  advSearch.classList.toggle("hide");
+document.addEventListener("click", (event) => {
+  if (event.target !== advSearchBtn && !advSearchBtn.contains(event.target)) {
+    advSearch.classList.add("hide");
+  } else {
+    advSearch.classList.toggle("hide");
+  }
+});
+
+advSearch.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+
+cancelBtn.addEventListener("click", () => {
+  advSearch.classList.add("hide");
+  console.log("first");
 });

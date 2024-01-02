@@ -3,6 +3,7 @@ $darkBlue: #2a85bd;
 $lightBlue: #6fa9cd;
 $grey: #6c757d;
 $lightGrey: #ddd;
+$black: #000;
 
 *,
 *::after,
@@ -18,6 +19,10 @@ Universal CSS
 starts
 =============
 *************/
+.pointer {
+  cursor: pointer;
+}
+
 .hide {
   display: none;
 }
@@ -33,7 +38,8 @@ ol {
 }
 
 p,
-h5 {
+h5,
+h6 {
   margin-bottom: 0;
 }
 
@@ -261,6 +267,7 @@ starts
 
   .date-time {
     display: flex;
+    align-items: center;
     gap: 5px;
   }
 
@@ -391,17 +398,29 @@ starts
   z-index: 99;
 
   .row {
-    // padding: 8px;
-
-    // &:nth-child(even) {
-    //   background-color: white;
-    // }
-
-    // &:nth-child(odd) {
-    //   background-color: $lightBlue;
-    // }
-
     .col {
+      padding: 5px;
+    }
+  }
+}
+
+/*************
+==============
+Batch search
+starts
+=============
+*************/
+.batch {
+  &-data {
+    &-upload {
+      border: 3px solid $black;
+    }
+    &-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 3px solid $black;
       padding: 5px;
     }
   }
